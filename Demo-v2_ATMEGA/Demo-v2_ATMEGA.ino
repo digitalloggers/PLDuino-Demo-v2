@@ -96,7 +96,7 @@ void setup()
   bool testmode = false;
   for(int i=1; i<8; ++i)
     testmode |= !digitalRead(30+i);
-  switch(MODE_WIFI)//showModeSelectionScreen(testmode? MODE_TEST : MODE_DEMO, 10))
+  switch(showModeSelectionScreen(testmode? MODE_TEST : MODE_DEMO, 10))
   {
     case MODE_DEMO:
       demo();
