@@ -98,15 +98,15 @@ SimpleCommandProcessor cmdprocessor(
       return cmd_sendState();
     else if (cmd.substring(0, 4) == "time")
       return cmd_adjustTime(cmd.substring(4));
-    else if (cmd.length() == 2)
+    else if (cmd.length() == 2) {
+      tft.print(cmd);
       return cmd_processSwitchCommand(cmd);
-    else {
+    } else {
       Serial.println("\nbadcmd: " + cmd);
       return false;
     }
   },
   [](const String &data) {
-    tft.print(data);
     Serial.print(data);      
   }
 );
