@@ -1,0 +1,3 @@
+[submodule "libraries/SimpleCommandProcessor-library"]
+	path = libraries/SimpleCommandProcessor-library
+	url = https://github.com/ddrd/SimpleCommandProcessor-library
