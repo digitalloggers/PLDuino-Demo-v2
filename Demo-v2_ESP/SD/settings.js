@@ -3,7 +3,7 @@ window.onload = function() {
     var now = new Date();
     document.getElementById("datetime-year").value = now.getFullYear();
     document.getElementById("datetime-month").value = now.getMonth()+1;
-    document.getElementById("datetime-day").value = now.getDate()+1;
+    document.getElementById("datetime-day").value = now.getDate();
     document.getElementById("datetime-hour").value = now.getHours();
     document.getElementById("datetime-minute").value = now.getMinutes();
   };
