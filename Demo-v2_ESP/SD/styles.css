@@ -25,7 +25,9 @@
 .control-table th, .control-table td {
   padding: 3px;
 }
-
+input[type="checkbox"] {
+  float: left;
+}
 .status-unknown {
   font-weight: bold;
   color: lightgray;
