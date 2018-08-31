@@ -116,7 +116,7 @@ SimpleCommandProcessor cmdprocessor(
 
 class ChunkedReader {
 public:
-  ChunkedReader (HardwareSerial *serialport, long time_out, auto fn_out)
+  ChunkedReader (HardwareSerial *serialport, long time_out, void (*fn_out)(const char *chunk))
     : chunklen(0),
       last_time(millis()),
       timeout(time_out),
